@@ -14,6 +14,8 @@ const App: React.FC = () => {
           <div className="text-2xl font-bold text-white">Nature&apos;s Code</div>
           <ul className="flex space-x-6 text-lg text-white">
             <li><a href="#" className="hover:text-[#BCE784] transition duration-300">Shop</a></li>
+            <li><a href="#" className="hover:text-[#BCE784] transition duration-300">Tools</a></li>
+            <li><a href="#" className="hover:text-[#BCE784] transition duration-300">Blog</a></li>
             <li><a href="#" className="hover:text-[#BCE784] transition duration-300">Über uns</a></li>
             <li><a href="#" className="hover:text-[#BCE784] transition duration-300">FAQ</a></li>
             <li><a href="#" className="hover:text-[#BCE784] transition duration-300">Kontakt</a></li>
@@ -22,19 +24,23 @@ const App: React.FC = () => {
       </header>
 
       {/* 1. Hero Section */}
-      <section className="relative flex items-center justify-center min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('https://placehold.co/1920x1080/525174/FFFFFF?text=Stilvolles+Wohnzimmer+mit+Pflanzen')" }}>
+      <section className="relative flex items-center justify-center min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('https://placehold.co/1920x1080/525174/FFFFFF?text= ')" }}>
         {/* Overlay with a darker purple for depth and text readability */}
         <div className="absolute inset-0 bg-[#513B56] opacity-60"></div>
         <div className="relative z-10 text-center text-white p-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg">
-            Dein Urbanes Ökosystem: Pflanzenliebe neu definiert – Design trifft Natur.
+            Das Urbane Ökosystem
           </h1>
+          <h2 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg"> 
+            Imitiert die Natur. Vollautomatisiert durch Technik.
+          </h2>
           <p className="text-xl md:text-2xl mb-8 opacity-90">
-            Revolutioniere deine Pflanzenpflege mit autonomer Intelligenz und nahtloser Ästhetik. Erlebe gesunde, langlebige Pflanzen ohne Aufwand, Fachwissen oder Zeit.
+            Vollautomatisierte Pflanzenpflege mit perfekten Ergebnissen. Technik, die nicht aussieht wie Technik und sich ästhetisch in deine Raumgestaltung integriert. 
+            Revolutioniere deine Pflanzenpflege und erlebe gesunde, langlebige Pflanzen ohne Aufwand, Fachwissen oder Zeit.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <button className="px-8 py-4 text-lg font-semibold text-white bg-[#5DD39E] rounded-full shadow-lg hover:bg-[#348AA7] transition duration-300">
-              Entdecke das Urbanes Ökosystem
+              Entdecke das Urbane Ökosystem
             </button>
             <button className="px-8 py-4 text-lg font-semibold text-[#5DD39E] bg-white rounded-full shadow-lg hover:bg-[#BCE784] hover:text-[#525174] transition duration-300">
               Jetzt kaufen
@@ -44,56 +50,98 @@ const App: React.FC = () => {
       </section>
 
       {/* 2. Problem-Ansprache */}
-      <section className="py-20 bg-[#BCE784]"> {/* Light green/yellow background */}
+      <section className="py-20 bg-[#BCE784]">
         <div className="container mx-auto px-4 text-center max-w-3xl">
-          <h2 className="text-4xl font-bold mb-12 text-[#525174]">Verabschiede dich von Pflanzenstress und Unsicherheit.</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-[#525174]">
-            <div className="p-6 bg-white rounded-xl shadow-md">
-              <p className="mb-4">
-                <span className="font-semibold text-[#5DD39E]">Kennst du das Gefühl, dass deine Pflanzen trotz aller Bemühungen nicht gedeihen wollen?</span> (Gelbe Blätter, dünne Triebe, ausbleibende Blütenbildung).
-              </p>
-              <p className="mb-4">
-                <span className="font-semibold text-[#5DD39E]">Ugly Grow Lights, die dein Interior stören</span> und versteckt werden müssen?
+          <h2 className="text-4xl font-bold mb-12 text-[#525174]">
+            Verabschiede dich von Pflanzenstress und Unsicherheit.
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-8 text-lg text-[#525174]">
+            <div className="p-6 bg-white rounded-xl shadow-md text-center">
+              <div className="text-green text-3xl mb-4">🌱</div>
+              <h3 className="text-xl font-semibold mb-2 text-[#5DD39E]">Gießen als lästige Aufgabe</h3>
+              <p className="text-sm text-gray-600">
+                Die Aufgabe, die man entweder vergisst, oder es zu gut meint.
               </p>
             </div>
-            <div className="p-6 bg-white rounded-xl shadow-md">
-              <p className="mb-4">
-                <span className="font-semibold text-[#5DD39E]">Das ständige Rätselraten bei Gießen und Düngen,</span> das zu Über- oder Unterversorgung führt?
+
+            <div className="p-6 bg-white rounded-xl shadow-md text-center">
+              <div className="text-green text-3xl mb-4">🧪</div>
+              <h3 className="text-xl font-semibold mb-2 text-[#5DD39E]">Überforderung bei Düngung</h3>
+              <p className="text-sm text-gray-600">
+                Das nötige Feingefühl und Fachwissen der Düngung wirkt überwältigend, weshalb Sie dies lieber vermeiden.
               </p>
-              <p className="mb-4">
-                <span className="font-semibold text-[#5DD39E]">Der überwältigende Zeitaufwand</span> für eine wachsende Pflanzensammlung?
+            </div>
+
+            <div className="p-6 bg-white rounded-xl shadow-md text-center">
+              <div className="text-green text-3xl mb-4">🥀</div>
+              <h3 className="text-xl font-semibold mb-2 text-[#5DD39E]">Frust durch sterbende Pflanzen</h3>
+              <p className="text-sm text-gray-600">
+                Die hohe Rate an sterbenden Pflanzen ist frustrierend und man scheint es nicht richtig machen zu können.
+              </p>
+            </div>
+
+            <div className="p-6 bg-white rounded-xl shadow-md text-center">
+              <div className="text-green text-3xl mb-4">📚</div>
+              <h3 className="text-xl font-semibold mb-2 text-[#5DD39E]">Widersprüchliche Ratgeber</h3>
+              <p className="text-sm text-gray-600">
+                Informationen und Ratgeber widersprechen sich oder sind zu ungenau. Pflanzenbedürfnisse scheinen komplex und willkürlich zu sein.
+              </p>
+            </div>
+
+            <div className="p-6 bg-white rounded-xl shadow-md text-center">
+              <div className="text-green text-3xl mb-4">🧭</div>
+              <h3 className="text-xl font-semibold mb-2 text-[#5DD39E]">Trial and Error</h3>
+              <p className="text-sm text-gray-600">
+                <strong>"Dafür musst du ein Gefühl bekommen"</strong>  
+                <br/>
+                Gießfrequenz, Standortwahl und Düngen scheinen ein Trial and Error zu sein, durch den jeder Pflanzenbesitzer durch muss.
+              </p>
+            </div>
+
+            <div className="p-6 bg-[#525174] rounded-xl shadow-md text-center">
+              <div className="text-green text-3xl mb-4">🌿</div>
+              <h3 className="text-xl font-semibold mb-2 text-[#BCE784]">Kein grüner Daumen?</h3>
+              <p className="text-sm text-white">
+                Sie glauben nicht an ihren grünen Daumen. 
+                <br /> <br /> 
+                <span className="text-[#BCE784] font-bold">Wir von Nature's Code wissen, dass das ein Irrtum ist.</span>
               </p>
             </div>
           </div>
-          <p className="text-2xl font-semibold mt-12 text-[#348AA7]"> {/* Teal/blue for solution */}
-            Wir haben die Lösung. Stell dir vor, deine Pflanzen wachsen von alleine – prächtig und gesund.
+          <p className="text-2xl font-semibold mt-12 text-[#348AA7]">
+          Pflanzenpflege ist weniger mystisch und willkürlich, als sie scheint. 
+          <br/>
+          <strong>Sie ist gut erforscht, berechenbar und damit kontrollierbar.</strong>
           </p>
         </div>
       </section>
 
+
+
       {/* 3. Das "Urbanes Ökosystem" – Die Gesamtlösung */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-12 text-[#525174]">Nature&apos;s Code präsentiert: Dein autonomes Urbanes Ökosystem.</h2>
+          <h2 className="text-4xl font-bold mb-12 text-[#525174]">Das autonome Urbane Ökosystem</h2>
           <p className="text-lg text-[#525174] mb-12 max-w-3xl mx-auto">
-            Entdecke die harmonische Einheit aus Design und Technologie, die synergetisch funktioniert, um deinen Pflanzen die optimale Pflege zu bieten.
+            Pflanzen brauchen vor allem drei Dinge: genügend Licht, sauberes Wasser und den richtigen Dünger. Unser Urbanes Ökosystem vereint und automatisiert die Erfüllung dieser Bedürfnisse optimiert für perfektes Wachstum basierend auf etlichen wissenschaftlichen Quellen und bestätigt durch eigene Tests.
           </p>
           <div className="flex flex-col lg:flex-row items-center justify-center space-y-12 lg:space-y-0 lg:space-x-16">
             <div className="flex flex-col items-center text-center max-w-sm">
               {/* Image component with width and height */}
-              <Image src="https://placehold.co/200x200/5DD39E/FFFFFF?text=Hängelampe" alt="Hängelampe" width={200} height={200} className="mb-6 rounded-full shadow-lg" />
-              <h3 className="text-2xl font-semibold mb-2 text-[#5DD39E]">Die Hängelampe</h3>
+              <Image src="https://placehold.co/200x200/5DD39E/FFFFFF?text=Bild" alt="Elevate" width={200} height={200} className="mb-6 rounded-full shadow-lg" />
+              <h3 className="text-2xl font-semibold mb-2 text-[#5DD39E]">Elevate</h3>
               <p className="text-[#525174]">Optimales Licht, wo immer du es brauchst – ästhetisch und effektiv.</p>
             </div>
             <div className="flex flex-col items-center text-center max-w-sm">
-              <Image src="https://placehold.co/200x200/5DD39E/FFFFFF?text=Intelligenter+Topf" alt="Intelligenter Topf und Mischstation" width={200} height={200} className="mb-6 rounded-full shadow-lg" />
-              <h3 className="text-2xl font-semibold mb-2 text-[#5DD39E]">Der Intelligente Topf & die Mischstation</h3>
-              <p className="text-[#525174]">Präzise Bewässerung und Nährstoffversorgung – komplett automatisiert.</p>
+              <Image src="https://placehold.co/200x200/5DD39E/FFFFFF?text=Bild" alt="Topf" width={200} height={200} className="mb-6 rounded-full shadow-lg" />
+              <h3 className="text-2xl font-semibold mb-2 text-[#5DD39E]">Topf</h3>
+              <p className="text-[#525174]">Automatisierte Bewässerung – kein Nachfüllen für mindestens 4 Wochen.</p>
             </div>
             <div className="flex flex-col items-center text-center max-w-sm">
-              <Image src="https://placehold.co/200x200/5DD39E/FFFFFF?text=Intuitive+App" alt="Intuitive App" width={200} height={200} className="mb-6 rounded-full shadow-lg" />
-              <h3 className="text-2xl font-semibold mb-2 text-[#5DD39E]">Die intuitive App</h3>
-              <p className="text-[#525174]">Volle Kontrolle und Transparenz, ohne Überforderung.</p>
+              <Image src="https://placehold.co/200x200/5DD39E/FFFFFF?text=Bild" alt="Mischstation" width={200} height={200} className="mb-6 rounded-full shadow-lg" />
+              <h3 className="text-2xl font-semibold mb-2 text-[#5DD39E]">Mischstation</h3>
+              <p className="text-[#525174]">Wasserfilterung und präzise Nährstoffversorgung für starkes und gesundes Wachstum</p>
             </div>
           </div>
           <div className="mt-16">

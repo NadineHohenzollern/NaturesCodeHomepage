@@ -14,7 +14,11 @@ module.exports = {
         blue: '#348AA7',
         darkBlue: '#525174',
         purple: '#513B56'
-      }
+      },
+      fontFamily: {
+        sans: ['Quicksand'], // , 'sans-serif'
+        mono: ['Libertinus Mono', 'monospace'], // optional
+      },
     },
   },
   plugins: [],
