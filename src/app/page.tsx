@@ -471,91 +471,92 @@ const App: React.FC = () => {
   return (
     // Tailwind CSS is assumed to be loaded via CDN in the HTML file
     // Overall background is customBlack, default text is green2 for a dark theme
-    <div className="font-sans antialiased text-green2 bg-[#131B23]">
+    <div className="font-encode antialiased text-green2 bg-[#131B23]">
       {/* Header / Navigation */}
       <header className="absolute top-0 left-0 right-0 z-10 p-4 bg-transparent">
         <nav className="container flex items-center justify-between mx-auto">
-          <div className="text-2xl font-bold text-[#E7DFC6]">Nature&apos;s Code</div>
-          <ul className="flex space-x-6 text-lg text-[#B4A694]">
-            <li><a href="#" className="hover:text-[#E7DFC6] transition duration-300">Shop</a></li>
-            <li><a href="#" className="hover:text-[#E7DFC6] transition duration-300">Tools</a></li>
-            <li><a href="#" className="hover:text-[#E7DFC6] transition duration-300">Blog</a></li>
-            <li><a href="#" className="hover:text-[#E7DFC6] transition duration-300">Über uns</a></li>
-            <li><a href="#" className="hover:text-[#E7DFC6] transition duration-300">FAQ</a></li>
-            <li><a href="#" className="hover:text-[#E7DFC6] transition duration-300">Kontakt</a></li>
+          <div className="text-2xl font-bold text-[#D8E1D0]">Nature&apos;s Code</div>
+          <ul className="flex space-x-6 text-lg text-[#A8B69F]">
+            <li><a href="#" className="hover:text-[#D8E1D0] transition duration-300">Shop</a></li>
+            <li><a href="#" className="hover:text-[#D8E1D0] transition duration-300">Tools</a></li>
+            <li><a href="#" className="hover:text-[#D8E1D0] transition duration-300">Blog</a></li>
+            <li><a href="#" className="hover:text-[#D8E1D0] transition duration-300">Über uns</a></li>
+            <li><a href="#" className="hover:text-[#D8E1D0] transition duration-300">FAQ</a></li>
+            <li><a href="#" className="hover:text-[#D8E1D0] transition duration-300">Kontakt</a></li>
           </ul>
         </nav>
       </header>
 
       {/* 1. Hero Section */}
-      <section className="relative flex items-center justify-center min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('https://placehold.co/1920x1080/131B23/131B23?text=Stilvolles+Wohnzimmer+mit+Pflanzen')" }}>
+      <section className="relative flex items-center justify-center min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/greenPlants.jpg')" }}>
         {/* Overlay with costumBlack for depth and text readability */}
         <div className="absolute inset-0 bg-[#131B23] opacity-60"></div>
         <div className="relative z-10 text-center text-[#E7DFC6] p-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg text-[#D9EE6F]">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg text-[#cce3de]">
             Das Urbane Ökosystem
           </h1>
-          <h2 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg text-[#87A623]"> 
+          {/* <h2 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg text-[#7BBD9F]"> 
             Imitiert die Natur. Vollautomatisiert durch Technik.
-          </h2>
+          </h2> */}
           <p className="text-xl md:text-2xl mb-8 opacity-90 text-[#E9F1F7]">
-            Vollautomatisierte Pflanzenpflege mit perfekten Ergebnissen. Technik, die nicht aussieht wie Technik und sich ästhetisch in deine Raumgestaltung integriert. 
-            Revolutioniere deine Pflanzenpflege und erlebe gesunde, langlebige Pflanzen ohne Aufwand, Fachwissen oder Zeit.
+            Optimale Pflanzenpflege für alle, die keinen grünen Daumen haben. 
+            Erlebe langlebige, große, schnellwachsende und gesunde Pflanzen 
+            <strong>ohne Fachwissen und ohne Aufwand.</strong>
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <button className="px-8 py-4 text-lg font-semibold text-[#131B23] bg-[#D9EE6F] rounded-full shadow-lg hover:bg-[#87A623] transition duration-300">
-              Entdecke das Urbane Ökosystem
-            </button>
-            <button className="px-8 py-4 text-lg font-semibold text-[#131B23] bg-[#E7DFC6] rounded-full shadow-lg hover:bg-[#816C61] hover:text-[#283037] transition duration-300">
+          <button className="px-8 py-4 text-lg font-semibold text-[#F6FFF8] border-2 border-[#F6FFF8] rounded-full hover:bg-[#F6FFF8] hover:text-[#131B23] transition duration-300">
+            Entdecke das Urbane Ökosystem
+          </button>
+            {/* <button className="px-8 py-4 text-lg font-semibold text-[#131B23] bg-[#E7DFC6] rounded-full shadow-lg hover:bg-[#B4A694] hover:text-[#283037] transition duration-300">
               Jetzt kaufen
-            </button>
+            </button> */}
           </div>
         </div>
       </section>
 
       {/* 2. Problem-Ansprache */}
-      <section className="py-20 bg-green2"> {/* green2 background */}
+      <section className="py-20 bg-[#F6FFF8]">
         <div className="container mx-auto px-4 text-center max-w-3xl">
-          <h2 className="text-4xl font-bold mb-12 text-green4">
+          <h2 className="text-4xl font-bold mb-12 text-[#6c584c]">
             Verabschiede dich von Pflanzenstress und Unsicherheit.
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-8 text-lg text-green4">
-            <div className="p-6 bg-green1 rounded-xl shadow-md text-center">
+            <div className="p-6 bg-[#E9F1F7] rounded-xl shadow-md text-center">
               <div className="text-green3 text-3xl mb-4">🌱</div>
-              <h3 className="text-xl font-semibold mb-2 text-green3">Gießen als lästige Aufgabe</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#a98467]">Gießen als lästige Aufgabe</h3>
               <p className="text-sm text-green4">
                 Die Aufgabe, die man entweder vergisst, oder es zu gut meint.
               </p>
             </div>
 
-            <div className="p-6 bg-green1 rounded-xl shadow-md text-center">
+            <div className="p-6 bg-[#E9F1F7] rounded-xl shadow-md text-center">
               <div className="text-green3 text-3xl mb-4">🧪</div>
-              <h3 className="text-xl font-semibold mb-2 text-green3">Überforderung bei Düngung</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#a98467]">Überforderung bei Düngung</h3>
               <p className="text-sm text-green4">
                 Das nötige Feingefühl und Fachwissen der Düngung wirkt überwältigend, weshalb Sie dies lieber vermeiden.
               </p>
             </div>
 
-            <div className="p-6 bg-green1 rounded-xl shadow-md text-center">
+            <div className="p-6 bg-[#E9F1F7] rounded-xl shadow-md text-center">
               <div className="text-green3 text-3xl mb-4">🥀</div>
-              <h3 className="text-xl font-semibold mb-2 text-green3">Frust durch sterbende Pflanzen</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#a98467]">Frust durch sterbende Pflanzen</h3>
               <p className="text-sm text-green4">
                 Die hohe Rate an sterbenden Pflanzen ist frustrierend und man scheint es nicht richtig machen zu können.
               </p>
             </div>
 
-            <div className="p-6 bg-green1 rounded-xl shadow-md text-center">
+            <div className="p-6 bg-[#E9F1F7] rounded-xl shadow-md text-center">
               <div className="text-green3 text-3xl mb-4">📚</div>
-              <h3 className="text-xl font-semibold mb-2 text-green3">Widersprüchliche Ratgeber</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#a98467]">Widersprüchliche Ratgeber</h3>
               <p className="text-sm text-green4">
                 Informationen und Ratgeber widersprechen sich oder sind zu ungenau. Pflanzenbedürfnisse scheinen komplex und willkürlich zu sein.
               </p>
             </div>
 
-            <div className="p-6 bg-green1 rounded-xl shadow-md text-center">
+            <div className="p-6 bg-[#E9F1F7] rounded-xl shadow-md text-center">
               <div className="text-green3 text-3xl mb-4">🧭</div>
-              <h3 className="text-xl font-semibold mb-2 text-green3">Trial and Error</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#a98467]">Trial and Error</h3>
               <p className="text-sm text-green4">
                 <strong>"Dafür musst du ein Gefühl bekommen"</strong>  
                 <br/>
@@ -563,13 +564,13 @@ const App: React.FC = () => {
               </p>
             </div>
 
-            <div className="p-6 bg-green4 rounded-xl shadow-md text-center">
+            <div className="p-6 bg-[#adc178] rounded-xl shadow-md text-center">
               <div className="text-green3 text-3xl mb-4">🌿</div>
-              <h3 className="text-xl font-semibold mb-2 text-green1">Kein grüner Daumen?</h3>
-              <p className="text-sm text-green2">
-                Sie glauben nicht an ihren grünen Daumen. 
+              <h3 className="text-xl font-semibold mb-2 text-[#6c584c]">Kein grüner Daumen?</h3>
+              <p className="text-sm text-[#E7DFC6]">
+                {/* Sie glauben nicht an ihren grünen Daumen.  */}
                 <br /> <br /> 
-                <span className="text-green1 font-bold">Wir von Nature's Code wissen, dass das ein Irrtum ist.</span>
+                <span className="text-[#6c584c] font-bold">Wir von Nature's Code wissen, dass das ein Irrtum ist.</span>
               </p>
             </div>
           </div>
@@ -582,7 +583,7 @@ const App: React.FC = () => {
       </section>
 
       {/* 3. Das "Urbanes Ökosystem" – Die Gesamtlösung */}
-      <section className="py-24 bg-costumBlack"> {/* Dark background */}
+      <section className="py-24 bg-[#D7EFE2]"> 
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-12 text-green2">Das autonome Urbane Ökosystem</h2>
           <p className="text-lg text-green2 mb-16 max-w-3xl mx-auto">
@@ -649,7 +650,7 @@ const App: React.FC = () => {
       </section>
 
       {/* 4. Kernbotschaft 1: "Pflanzenliebe neu definiert: Design trifft Natur" */}
-      <section className="py-20 bg-green2"> {/* green2 background */}
+      <section className="py-20 bg-[#F6FFF8]"> {/* green2 background */}
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:space-x-12">
           <div className="lg:w-1/2 mb-10 lg:mb-0">
             <Image src="https://placehold.co/700x500/44482A/A7B758?text=Elegante+Hängelampe+im+Wohnraum+(3000K)" alt="Elegante Hängelampe im Wohnraum" width={700} height={500} className="rounded-xl shadow-lg w-full" />

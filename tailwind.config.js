@@ -23,6 +23,8 @@ module.exports = {
       fontFamily: {
         sans: ['Quicksand'], // , 'sans-serif'
         mono: ['Libertinus Mono', 'monospace'], // optional
+        sansation: ['"Sansation"', 'sans-serif'],
+        encode: ['"Encode Sans Expanded"', 'sans-serif'],
       },
     },
   },

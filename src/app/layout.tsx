@@ -28,21 +28,29 @@ export default function RootLayout({
         {/* Google Fonts: Quicksand */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link 
+        {/* <link 
           href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" 
           rel="stylesheet" 
         />
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" 
-          rel="stylesheet"/>
+       */}
         {/* <link
           href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
           rel="stylesheet"
         /> */}
+        {/* <link 
+          href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Quicksand:wght@300..700&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" 
+          rel="stylesheet"
+        /> */}
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Libertinus+Mono&family=Quicksand:wght@300..700&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" 
+          rel="stylesheet"
+        />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      {/* <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {children}
+      </body> */}
+      <body className="font-encode antialiased">
         {children}
       </body>
     </html>
