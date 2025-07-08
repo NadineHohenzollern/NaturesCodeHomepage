@@ -500,8 +500,9 @@ const App: React.FC = () => {
           </h2> */}
           <p className="text-xl md:text-2xl mb-8 opacity-90 text-[#E9F1F7]">
             Optimale Pflanzenpflege für alle, die keinen grünen Daumen haben. 
-            Erlebe langlebige, große, schnellwachsende und gesunde Pflanzen 
-            <strong>ohne Fachwissen und ohne Aufwand.</strong>
+            Erlebe langlebige, große, schnellwachsende und gesunde Pflanzen  
+            <br />
+            <strong> ohne Fachwissen und ohne Aufwand.</strong>
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <button className="px-8 py-4 text-lg font-semibold text-[#F6FFF8] border-2 border-[#F6FFF8] rounded-full hover:bg-[#F6FFF8] hover:text-[#131B23] transition duration-300">
@@ -514,8 +515,82 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* 2. Problem-Ansprache */}
-      <section className="py-20 bg-[#F6FFF8]">
+      {/* 1a. Problem Pflege */}
+      <section className="py-20 bg-[#121113] text-[#E5EEDE]">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-8 text-[#E5EEDE]">Das Problem mit der Pflege</h2>
+          <p className="text-lg md:text-xl mb-6">
+            Pflanzen am leben zu halten ist für die meisten von uns schwieriger als gedacht. 
+            Eine geeignete Standortwahl und regelmäßiges und korrektes Gießen ist bisher ein Trial and Error ohne Garantie auf Erfolg. 
+            Pflanzenratgeber liefern ungenaue Hinweise, bei Problemen findet man kaum eine eindeutige Ursache. 
+            <br />
+            Das steht in vollkommenem Kontrast dazu, dass Zimmerpflanzen weitestgehen gut erforscht sind. 
+            Wir kennen ihre Bedürfnisse und können genau quantifizieren wann sie wie viel von etwas brauchen. 
+
+            {/* während Pflegeratgeber ungenaue und uneindeutige Informationen liefern. 
+            Dabei sind unsere Zimmerpflanzen gut erforscht und ihre Bedürfnisse konkret quantisierbar. 
+            Was es braucht ist kein grüner Daumen und auch kein Gefühl für Pflanzen. 
+             
+
+            Es wird Zeit dir Pflege von Zimmerpflanzen zu revolutionieren und ihren Stand aus dem letzten Jahrhundert zu holen. 
+            Bedürfnisse von Pflanzen sind nicht willkürlich und es braucht auch keinen grünen Daumen oder ein Gefühl für die Pflanze.
+            Es braucht   
+
+            Unsere Mission ist es, jedem zu ermöglichen urbane Lebensräume grüner, gesünder und inspirierender zu gestalten. 
+            
+            – mit smarter Technologie, die Pflanzenpflege revolutioniert.
+            Gesundheitsfördernde und konzentrationsstärkende Luft oder einfach als ästhetisches Interior-Statement - die Gründe für Zimmerpflanzen sind endlos. 
+
+            Leider scheitern wir immer wieder an der richtigen Pflege und entsorgen eine Pflanze nach der nächsten. 
+            Immer mehr Menschen greifen zu Plastikpflanzen und verzichten auf die 
+            Unsere Mission ist es, urbane Lebensräume grüner, gesünder und inspirierender zu gestalten – mit smarter Technologie, die Pflanzenpflege revolutioniert. */}
+          </p>
+          <p className="text-lg md:text-xl">
+            {/* Unsere Vision: Eine Welt, in der jede Pflanze gedeiht – unabhängig von Zeit, Wissen oder Umgebung. Nachhaltig. Ästhetisch. Vollautomatisiert. */}
+            Doch warum sind Pflanzenratgeber dann so ungenau und der Erfolg der Pflege scheinbar Glückssache?
+          </p>
+        </div>
+      </section>
+
+      {/* 1b. Vorbild Natur */}
+      <section className="py-20 bg-[#A8B69F] text-[#121113]">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-8 text-[#121113]">Pflanzenwachstum ist nicht willkürlich</h2>
+          <p className="text-lg md:text-xl mb-6">
+            Was Pflanzen brauchen ist genug Licht, regelmäßiges Wasser und die richtigen Nährstoffe. 
+            Was genug, regelmäßig und das richtige ist, hängt von der Pflanzenart ab - aber nicht nur - 
+            auch von der Raumtemperatur und der Luftfeuchtigkeit. 
+            Der Boden muss den richtigen pH-Wert haben, 
+            das Düngverhältnis muss an die Wasserqualität angepasst werden 
+            und die Gießfrequenz schwankt je Jahreszeit. 
+            In der Landwirtschaft ist das Regulieren dieser Werte längst gängige und notwendige Praxis. 
+          </p>
+          <p className="text-lg md:text-xl">
+            Wer also auch privat wirklich langlebige Pflanzen möchte, kann regelmäßige Messungen und abgestimmtes Düngen nicht vermeiden. 
+          </p>
+        </div>
+      </section>
+
+      {/* 1a. Mission & Vision */}
+      <section className="py-20 bg-[#121113] text-[#E5EEDE]">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-8 text-[#E5EEDE]">Unsere Mission</h2>
+          <p className="text-lg md:text-xl mb-6">
+            Wir möchten, dass jeder Mensch seinen Wohnraum grüner, gesünder uns inspirierender gestalten kann,
+            ohne zum Hobby-Botaniker werden zu müssen und Pflanzen zum Zeitfresser werden. 
+            Es wird Zeit die Pflege von Zimmerpflanzen zu revolutionieren und im kleinen Maßstab anzuwenden, 
+            was seit Jahrzenhnten unverzichtbare Praxis der Landwirtschaft ist. 
+            
+          </p>
+          <p className="text-lg md:text-xl">
+            Wir entwicklen daher Produkte, die die Pflanzenpflege automatisiert, optimiert und gleichzeitig 
+            den Fokus auf modernes Design legt, um deinen Wohnraum ästhetisch zu ergänzen. 
+          </p>
+        </div>
+      </section>
+
+      {/* 2. Problem-Ansprache
+      <section className="py-20 bg-[#A8B69F]">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="text-4xl font-bold mb-12 text-[#6c584c]">
             Verabschiede dich von Pflanzenstress und Unsicherheit.
@@ -568,7 +643,6 @@ const App: React.FC = () => {
               <div className="text-green3 text-3xl mb-4">🌿</div>
               <h3 className="text-xl font-semibold mb-2 text-[#6c584c]">Kein grüner Daumen?</h3>
               <p className="text-sm text-[#E7DFC6]">
-                {/* Sie glauben nicht an ihren grünen Daumen.  */}
                 <br /> <br /> 
                 <span className="text-[#6c584c] font-bold">Wir von Nature's Code wissen, dass das ein Irrtum ist.</span>
               </p>
@@ -580,59 +654,80 @@ const App: React.FC = () => {
           <strong>Sie ist gut erforscht, berechenbar und damit kontrollierbar.</strong>
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* 3. Das "Urbanes Ökosystem" – Die Gesamtlösung */}
-      <section className="py-24 bg-[#D7EFE2]"> 
+      <section className="py-24 bg-[#A8B69F]"> 
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-12 text-green2">Das autonome Urbane Ökosystem</h2>
-          <p className="text-lg text-green2 mb-16 max-w-3xl mx-auto">
-            Pflanzen brauchen vor allem drei Dinge: genügend Licht, sauberes Wasser und den richtigen Dünger.
-            Unser Urbanes Ökosystem vereint und automatisiert die Erfüllung dieser Bedürfnisse – optimiert für perfektes Wachstum,
-            basierend auf etlichen wissenschaftlichen Quellen und bestätigt durch eigene Tests.
+          <h2 className="text-4xl font-bold mb-12 text-[#121113]">Das Urbane Ökosystem</h2>
+          <p className="text-lg text-[#121113] mb-16 max-w-3xl mx-auto">
+            Automatisiert und optimiert die Pflege für fast jede Pflanze für langlebige und gesunge Pflanzen - ohne Fachwissen oder Aufwand. 
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-16">
             {/* Box 1 */}
-            <div className="bg-green4 rounded-xl shadow-lg p-8 flex flex-col items-center">
+            <div className="bg-[#E5EEDE] rounded-xl shadow-lg p-3 flex flex-col items-center">
               <Image
-                src="https://placehold.co/320x220/768041/D9EE6F?text=Elevate"
+                src="https://placehold.co/320x450/768041/D9EE6F?text=Elevate"
                 alt="Elevate"
                 width={320}
-                height={220}
+                height={520}
                 className="mb-6 object-cover rounded-md"
               />
-              <h3 className="text-2xl font-semibold mb-3 text-green3">Elevate</h3>
-              <p className="text-green2 text-base">Optimales Licht, wo immer du es brauchst – ästhetisch und effektiv.</p>
+              <h3 className="text-2xl font-semibold mb-3 text-[#121113]">Elevate</h3>
+              <p className="text-[#121113] text-base">Die Wachstumslampe, die deine Pflanze auch in dunklen Ecken versorgt – ästhetisch und effektiv.
+                Das helle Licht lässt sich mühelos dimmen, um sich der gewünschten Atmosphäre anzupassen. 
+                Zudem ist der Lichtkegel einstellbar, um unnötiges Blenden zu vermeiden.   
+              </p>
             </div>
 
             {/* Box 2 */}
-            <div className="bg-green4 rounded-xl shadow-lg p-8 flex flex-col items-center">
+            <div className="bg-[#E5EEDE] rounded-xl shadow-lg p-3 flex flex-col items-center">
               <Image
-                src="https://placehold.co/320x220/768041/D9EE6F?text=Topf"
-                alt="Topf"
+                src="https://placehold.co/320x450/768041/D9EE6F?text=Anthurium"
+                alt="Elevate"
                 width={320}
-                height={220}
+                height={520}
                 className="mb-6 object-cover rounded-md"
               />
-              <h3 className="text-2xl font-semibold mb-3 text-green3">Topf</h3>
-              <p className="text-green2 text-base">Automatisierte Bewässerung – kein Nachfüllen für mindestens 4 Wochen.</p>
+              <h3 className="text-2xl font-semibold mb-3 text-[#121113]">Anthurium</h3>
+              <p className="text-[#121113] text-base">Der smarte Bewässerunstopf, der deine Pflanze nicht nur regelmäßig 
+                bewässert, sondern auch die wichtigsten Umweltparameter misst. 
+                Sein Wasserreservoir reicht für mindestens vier Wochen, bevor es neu befüllt werden muss.</p>
             </div>
 
             {/* Box 3 */}
-            <div className="bg-green4 rounded-xl shadow-lg p-8 flex flex-col items-center">
+            <div className="bg-[#E5EEDE] rounded-xl shadow-lg p-3 flex flex-col items-center">
               <Image
-                src="https://placehold.co/320x220/768041/D9EE6F?text=Mischstation"
-                alt="Mischstation"
+                src="https://placehold.co/320x450/768041/D9EE6F?text=Nurture"
+                alt="Nurture"
                 width={320}
-                height={220}
+                height={520}
                 className="mb-6 object-cover rounded-md"
               />
-              <h3 className="text-2xl font-semibold mb-3 text-green3">Mischstation</h3>
-              <p className="text-green2 text-base">Wasserfilterung und präzise Nährstoffversorgung für starkes und gesundes Wachstum.</p>
+              <h3 className="text-2xl font-semibold mb-3 text-[#121113]">Nurture</h3>
+              <p className="text-[#121113] text-base">Die Düngstation, das Leitungswasser filtert und basierend auf 
+                der Pflanzenart und den Messungsdaten des Anthurium Bewässerungstopf das optimale Gießwasser anmischt.  
+                 .</p>
+            </div>
+
+            {/* Box 4 */}
+            <div className="bg-[#E5EEDE] rounded-xl shadow-lg p-3 flex flex-col items-center">
+              <Image
+                src="https://placehold.co/320x450/768041/D9EE6F?text=App"
+                alt="Nature's Code App"
+                width={320}
+                height={520}
+                className="mb-6 object-cover rounded-md"
+              />
+              <h3 className="text-2xl font-semibold mb-3 text-[#121113]">Nature's Code App</h3>
+              <p className="text-[#121113] text-base">Registriere deinen Anthurium, deine Nurture und deine Pflanze per App,
+                  um sie miteinander zu verbinden. Lasse dir Messdaten und Auswertungen zum Wachstum deiner Pflanze anzeigen 
+                  und dich per Notification an das Nachfüllen des Gießwassers erinnern. 
+                 .</p>
             </div>
           </div>
-
+          
           {/* Infografik */}
           <div className="mt-20">
             <Image
