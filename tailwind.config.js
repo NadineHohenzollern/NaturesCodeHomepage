@@ -13,7 +13,12 @@ module.exports = {
         green: '#5DD39E',
         blue: '#348AA7',
         darkBlue: '#525174',
-        purple: '#513B56'
+        purple: '#513B56',
+        green1: '#D9EE6F',
+        green2: '#A7B758',
+        green3: '#768041',
+        green4: '#44482A',
+        costumBlack: '#121113'
       },
       fontFamily: {
         sans: ['Quicksand'], // , 'sans-serif'
