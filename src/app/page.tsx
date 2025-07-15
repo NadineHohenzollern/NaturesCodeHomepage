@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image'; 
 import ImageSlider from "@/components/ImageSlider";
+import ImageRow from "@/components/ImageRow";
 
 const elevateImages = [
   { src: "/elevate/elevate_1.jpg", alt: "Elevate 1" },
@@ -22,6 +23,12 @@ const nurtureImages = [
 const appImages = [
   { src: "/plants/plants_1.jpg", alt: "Nurture 1" },
   { src: "/plants/plants_1.jpg", alt: "Nurture 2" },
+];
+
+const imagesPlants = [
+  { src: "/plants/plants_3.jpg", alt: "Plant 1" },
+  { src: "/plants/plants_5.jpg", alt: "Plant 2" },
+  { src: "/plants/plants_6.jpg", alt: "Plant 3" },
 ];
 
 
@@ -52,20 +59,21 @@ const App: React.FC = () => {
         {/* Overlay with costumBlack for depth and text readability */}
         <div className="absolute inset-0 bg-[#131B23] opacity-60"></div>
         <div className="relative z-10 text-center text-[#E7DFC6] p-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg text-[#cce3de]">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg text-[#F6FFF8]">
             Urbanes Ökosystem
           </h1>
           {/* <h2 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg text-[#7BBD9F]"> 
             Imitiert die Natur. Vollautomatisiert durch Technik.
           </h2> */}
-          <p className="text-xl md:text-2xl mb-8 opacity-90 text-[#E9F1F7]">
-            Ganzheitliche Pflanzenpflege 
+          <p className="text-xl md:text-2xl mb-8 opacity-90 text-[#F6FFF8]">
+            {/* Ganzheitliche Pflanzenpflege 
             <br />
             <strong> vollautomatisiert und professionell.</strong>
             <br />
-            Für langlebige, große, und gesunde Pflanzen.  
-            
-            {/* <strong> ohne Fachwissen und ohne Aufwand.</strong> */}
+            Für langlebige, große, und gesunde Pflanzen.   */}
+            <strong> Systematische Optimierung deiner Zimmerpflanzen. </strong>
+            <br />
+            professionell - mühelos - vollautomatisiert 
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <button className="px-8 py-4 text-lg font-semibold text-[#F6FFF8] border-2 border-[#F6FFF8] rounded-full hover:bg-[#F6FFF8] hover:text-[#131B23] transition duration-300">
@@ -78,11 +86,36 @@ const App: React.FC = () => {
         </div>
       </section>
 
+      {/* Kurzes Zitat als Überleitung */}
+      <section className="py-20 bg-[#121113] text-[#E5EEDE]">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+        <h3 className="text-3xl font-bold mb-8 text-[#E5EEDE]">Moderne Pflanzenpflege, mühelos ästhetisch. </h3>
+          <p className="text-lg md:text-xl mb-6">
+            
+          </p>
+          <p className="text-lg md:text-xl">
+            Als Dekoration oder Statussymbol sind eindrucksvolle Zimmerpflanzen längst Bestandteil moderner Wohn- und Arbeitsräume. 
+            Doch ihre Pflege ist mühsam und Ergebnisse bleiben mittelmäßig.
+            
+            <br /><br />
+            Wir von Nature's Code wollen die Modernisierung der Pflanzenpflege vorantreiben. 
+            Dafür haben wir das automatisierte Urbane Ökosystem entwickelt, das dir nicht nur <strong>95% der Arbeit abnimmt</strong>,
+            sondern dein Pflanzenwachstum optimiert - basierend auf Expertenwissen. 
+            Damit <strong>leben Pflanzen länger</strong>, <strong>wachsen schneller</strong> und ihre <strong>Blätter werden größer.</strong> 
+            
+            <br /><br />
+            Nature's Code ist das Ende des technischen Rückstands in der Pflanzenpflege, und der Anfang grenzenlos grüner Raumgestaltung. 
+            Modern, effektiv und ästhetisch.
+
+          </p>
+        </div>
+      </section>
+
       {/* Value Proposition: Urbanes Ökosystem */}
       <section className="py-20 bg-[#D8E1D0]"> {/* green2 background */}
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:space-x-12">
           <div className="lg:w-1/2 mb-10 lg:mb-0">
-            <Image src="https://placehold.co/700x500/E5EEDE/121113?text=Elegante+Hängelampe+im+Wohnraum+(3000K)" alt="Elegante Hängelampe im Wohnraum" width={700} height={500} className="rounded-xl shadow-lg w-full" />
+            <Image src='/plants/plants_2.jpg' alt="Elegante Hängelampe im Wohnraum" width={700} height={500} className="rounded-xl shadow-lg w-full" />
             <p className="mt-4 text-green4 text-sm text-center">Ästhetisches Bild mit Topf, Pflanze, Lampe und entspannter Person daneben.</p>
           </div>
           <div className="lg:w-1/2">
@@ -109,19 +142,11 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Kurzes Zitat als Überleitung */}
-      <section className="py-20 bg-[#121113] text-[#E5EEDE]">
-        <div className="container mx-auto px-6 max-w-4xl text-center">
-          {/* <h2 className="text-4xl font-bold mb-8 text-[#E5EEDE]">Das Problem mit der Pflege</h2> */}
-          {/* <p className="text-lg md:text-xl mb-6">
-            Test test 
-          </p> */}
-          <p className="text-lg md:text-xl">
-            {/* Unsere Vision: Eine Welt, in der jede Pflanze gedeiht – unabhängig von Zeit, Wissen oder Umgebung. Nachhaltig. Ästhetisch. Vollautomatisiert. */}
-            Unsere Vision - Perfekte Pflanzen für jeden. Ohne Aufwand. 
-          </p>
-        </div>
+      {/* Bilderkollektion */}
+      <section className="flex w-full overflow-hidden">
+        <ImageRow images={imagesPlants} />
       </section>
+    
 
       {/* Vorstellung "Urbanes Ökosystem" – Die Gesamtlösung */}
       <section className="py-24 bg-[#A8B69F]"> 
@@ -285,7 +310,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* 2. Problem-Ansprache
+      {/* 2. Problem-Ansprache */}
       <section className="py-20 bg-[#A8B69F]">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="text-4xl font-bold mb-12 text-[#6c584c]">
@@ -350,7 +375,7 @@ const App: React.FC = () => {
           <strong>Sie ist gut erforscht, berechenbar und damit kontrollierbar.</strong>
           </p>
         </div>
-      </section> */}
+      </section>
 
       
 
