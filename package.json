@@ -11,6 +11,7 @@
     "build:css": "NODE_ENV=production tailwindcss -o src/tailwind.css -m"
   },
   "dependencies": {
+    "keen-slider": "^6.8.6",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
