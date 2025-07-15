@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image'; 
 import ImageSlider from "@/components/ImageSlider";
 import ImageRow from "@/components/ImageRow";
+import ImageFeatureRow from "@/components/ImageFeatureRow";
 
 const elevateImages = [
   { src: "/elevate/elevate_1.jpg", alt: "Elevate 1" },
@@ -31,7 +32,133 @@ const imagesPlants = [
   { src: "/plants/plants_6.jpg", alt: "Plant 3" },
 ];
 
+const urbanEcosystemfeatures = [
+  {
+    src: "/elevate/elevate_1.jpg",
+    alt: "lighting",
+    title: "Elevate",
+    description: "Optimales Pflanzenlicht für jedes Wohnzimmer. Elegant, unaufdringlich, effektiv.",
+    overlayText: 
+      (<div>
+        <ul className="space-y-4 text-lg text-white">
+          <li className="flex items-start">
+            <span className="text-white mr-3 text-2xl">✓</span>
+            {/* <span><strong className="text-white">Effektives Licht</strong> selbst bei begrenzter Fensterfläche.</span> */}
+            <span><strong className="text-white">Optimiertes Licht für Pflanzenwachstum</strong></span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-white mr-3 text-2xl">✓</span>
+            {/* <span><strong className="text-white">Flexibler Abstrahlwinkel</strong> gegen Blendung.</span> */}
+            <span><strong className="text-white">Einstellbarer Abstrahlwinkel gegen Blendung</strong></span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-white mr-3 text-2xl">✓</span>
+            {/* <span><strong className="text-white">Dimmbarkeit</strong> für angepasstes Licht an jede Tageszeit.</span> */}
+            <span><strong className="text-white">Stufenlos dimmbar</strong></span> 
+          </li>
+          <li className="flex items-start">
+            <span className="text-white mr-3 text-2xl">✓</span>
+            {/* <span><strong className="text-white">Zeitloses Design</strong> für elegante Integration in jedes Designer-Interior.</span> */}
+            <span><strong className="text-white">Zeitloses und minimalistisches Design</strong></span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-white mr-3 text-2xl">✓</span>
+            {/* <span><strong className="text-white">Angenehmes Licht</strong> für eine gemütliche Atmosphäre.</span> */}
+            <span><strong className="text-white">Angenehmes, warm-weißes Licht</strong></span>
+          </li>
+        </ul>
 
+        {/* Pfeil mit 'Erfahre mehr' */}
+        <div className="mt-10 text-center">
+            <a
+              href="#"
+              className="inline-flex items-center text-white text-lg font-medium hover:underline"
+            >
+              Erfahre mehr
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="ml-2 h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+      </div>)
+  },
+  {
+    src: "/flowpot/flowpot_1.jpg",
+    alt: "watering",
+    title: "Flowline",
+    description: "Automatisches Gießen durch smarte Sensorik. Bis zu acht Wochen nicht ans Gießen denken.",
+    overlayText: 
+      ((
+        // Liste mit Features
+        <div>
+          <ul className="space-y-4 text-lg text-white">
+            <li className="flex items-start">
+              <span className="text-white mr-3 text-2xl">✓</span>
+              {/* <span><strong className="text-white">Automatisiertes Gießen</strong> für mindestens vier Wochen.</span> */}
+              <span><strong className="text-white">Automatisierte Bewässerung von Topf und Rankstab</strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-white mr-3 text-2xl">✓</span>
+              {/* <span><strong className="text-white">Bewässerung des Rankstabes</strong> reduziert den Pflegeaufwand drastisch.</span> */}
+              <span><strong className="text-white">Drastisch reduzierter Pflegeaufwand</strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-white mr-3 text-2xl">✓</span>
+              <span><strong className="text-white">Kein Nachfüllen für mindestens vier Wochen</strong></span>
+            </li> 
+            <li className="flex items-start">
+              <span className="text-white mr-3 text-2xl">✓</span>
+              <span><strong className="text-white">App-Steuerung und Notifications</strong></span>
+              {/* <span><strong className="text-white">App-Steuerung</strong> für Einblicke in dein Pflanzenwachstum.</span> */}
+            </li>
+            <li className="flex items-start">
+              <span className="text-white mr-3 text-2xl">✓</span>
+              <span><strong className="text-white">Parameter Monitoring</strong></span>
+              {/* <span><strong className="text-white">Überwachung entscheidender Parameter</strong> wie Temperatur und Luftfeuchtigkeit.</span> */}
+            </li>
+            {/* <li className="flex items-start">
+              <span className="text-white mr-3 text-2xl">✓</span>
+              <span><strong className="text-white">Notifications</strong> um an das Nachfüllen erinnert zu werden.</span>
+            </li> */}
+          </ul>
+
+          {/* Pfeil mit 'Erfahre mehr' */}
+          <div className="mt-10 text-center">
+            <a
+              href="#"
+              className="inline-flex items-center text-white text-lg font-medium hover:underline"
+            >
+              Erfahre mehr
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="ml-2 h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      )
+    )
+  },
+  {
+    src: "/plants/plants_1.jpg",
+    alt: "nurturing",
+    title: "Thrive",
+    description: "Maßgefertigtes und individuelles Gießwasser. Für makellose Pflazen.",
+  },
+];
 
 // Main App component for the Nature's Code homepage
 const App: React.FC = () => {
@@ -59,7 +186,7 @@ const App: React.FC = () => {
         {/* Overlay with costumBlack for depth and text readability */}
         <div className="absolute inset-0 bg-[#131B23] opacity-60"></div>
         <div className="relative z-10 text-center text-[#E7DFC6] p-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg text-[#F6FFF8]">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl  leading-tight mb-6 rounded-lg text-[#F6FFF8]">
             Urbanes Ökosystem
           </h1>
           {/* <h2 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 rounded-lg text-[#7BBD9F]"> 
@@ -73,7 +200,7 @@ const App: React.FC = () => {
             Für langlebige, große, und gesunde Pflanzen.   */}
             <strong> Systematische Optimierung deiner Zimmerpflanzen. </strong>
             <br />
-            professionell - mühelos - vollautomatisiert 
+            professionell - mühelos - automatisiert 
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <button className="px-8 py-4 text-lg font-semibold text-[#F6FFF8] border-2 border-[#F6FFF8] rounded-full hover:bg-[#F6FFF8] hover:text-[#131B23] transition duration-300">
@@ -86,35 +213,46 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Kurzes Zitat als Überleitung */}
+      {/* Mission */}
       <section className="py-20 bg-[#121113] text-[#E5EEDE]">
         <div className="container mx-auto px-6 max-w-4xl text-center">
-        <h3 className="text-3xl font-bold mb-8 text-[#E5EEDE]">Moderne Pflanzenpflege, mühelos ästhetisch. </h3>
+        <h3 className="text-3xl font-bold mb-8 text-[#E5EEDE]">Mühelos ästhetisch. </h3>
           <p className="text-lg md:text-xl mb-6">
             
           </p>
           <p className="text-lg md:text-xl">
-            Als Dekoration oder Statussymbol sind eindrucksvolle Zimmerpflanzen längst Bestandteil moderner Wohn- und Arbeitsräume. 
-            Doch ihre Pflege ist mühsam und Ergebnisse bleiben mittelmäßig.
-            
-            <br /><br />
-            Wir von Nature's Code wollen die Modernisierung der Pflanzenpflege vorantreiben. 
-            Dafür haben wir das automatisierte Urbane Ökosystem entwickelt, das dir nicht nur <strong>95% der Arbeit abnimmt</strong>,
+            {/* Als Dekoration oder Statussymbol sind eindrucksvolle Zimmerpflanzen längst Bestandteil moderner Wohn- und Arbeitsräume. 
+            Doch ihre Pflege ist mühsam und Ergebnisse bleiben mittelmäßig. 
+            <br /><br />*/}
+
+            Wir {/* von Nature's Code */}wollen die Modernisierung der Pflanzenpflege vorantreiben. 
+            Die Pflege von Zimmerpflanzen ist mühsam und zu oft erfolglos. 
+            Deshalb haben wir ein System entwickelt, das dir nicht nur <strong>95% der Arbeit abnimmt</strong>,
             sondern dein Pflanzenwachstum optimiert - basierend auf Expertenwissen. 
-            Damit <strong>leben Pflanzen länger</strong>, <strong>wachsen schneller</strong> und ihre <strong>Blätter werden größer.</strong> 
+
+            Damit deine <strong>Pflanzen länger leben</strong>, <strong>schneller wachsen</strong> und <strong>größere Blätter</strong>  bekommen.
             
             <br /><br />
-            Nature's Code ist das Ende des technischen Rückstands in der Pflanzenpflege, und der Anfang grenzenlos grüner Raumgestaltung. 
-            Modern, effektiv und ästhetisch.
+            Wir wollen das Ende des technischen Rückstands in der Pflanzenpflege sein, und der Anfang grenzenlos grüner Raumgestaltung. 
+            Werde auch du Teil unserer Mission - wir freuen uns auf dich! 
+            {/* Modern, effektiv und ästhetisch. */}
 
           </p>
         </div>
       </section>
 
       {/* Value Proposition: Urbanes Ökosystem */}
-      <section className="py-20 bg-[#D8E1D0]"> {/* green2 background */}
+      <section className="py-20 bg-[#F3F3F0]"> {/* green2 background */}
+      <div className="text-center">
+        <h1 className="text-5xl  mb-3 text-[#121113]">Urbanes Ökosystem</h1>
+        {/* <h2 className="text-2xl font-bold text-[#121113]">Das Gesamtkonzept für deine Zimmerpflanzen</h2>
+        <p className="text-lg d:text-xl mb-6 text-[#121113]">
+            Kleine Fenster, dunkle Ecken und zu wenig Sonnenlicht sind der Hauptgrund, weshalb das Wachstum deiner Pflanzen stagniert. 
+            
+        </p> */}
+      </div>
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:space-x-12">
-          <div className="lg:w-1/2 mb-10 lg:mb-0">
+          {/* <div className="lg:w-1/2 mb-10 lg:mb-0">
             <Image src='/plants/plants_2.jpg' alt="Elegante Hängelampe im Wohnraum" width={700} height={500} className="rounded-xl shadow-lg w-full" />
             <p className="mt-4 text-green4 text-sm text-center">Ästhetisches Bild mit Topf, Pflanze, Lampe und entspannter Person daneben.</p>
           </div>
@@ -138,7 +276,8 @@ const App: React.FC = () => {
                 <span><strong className="text-[#121113]">Kein Zeitaufwand.</strong> Übernimmt für dich vollautomatisiert die Aufgaben der Pflanzenpflege wie ein profesioneller Botaniker.</span>
               </li>
             </ul>
-          </div>
+          </div> */}
+          <ImageFeatureRow features={urbanEcosystemfeatures} />
         </div>
       </section>
 
@@ -146,10 +285,38 @@ const App: React.FC = () => {
       <section className="flex w-full overflow-hidden">
         <ImageRow images={imagesPlants} />
       </section>
+
+      {/* Mission */}
+      <section className="py-20 bg-[#121113] text-[#E5EEDE]">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+        <h3 className="text-3xl font-bold mb-8 text-[#E5EEDE]">Mühelos ästhetisch. </h3>
+          <p className="text-lg md:text-xl mb-6">
+            
+          </p>
+          <p className="text-lg md:text-xl">
+            {/* Als Dekoration oder Statussymbol sind eindrucksvolle Zimmerpflanzen längst Bestandteil moderner Wohn- und Arbeitsräume. 
+            Doch ihre Pflege ist mühsam und Ergebnisse bleiben mittelmäßig. 
+            <br /><br />*/}
+
+            Wir {/* von Nature's Code */}wollen die Modernisierung der Pflanzenpflege vorantreiben. 
+            Die Pflege von Zimmerpflanzen ist mühsam und zu oft erfolglos. 
+            Deshalb haben wir ein System entwickelt, das dir nicht nur <strong>95% der Arbeit abnimmt</strong>,
+            sondern dein Pflanzenwachstum optimiert - basierend auf Expertenwissen. 
+
+            Damit deine <strong>Pflanzen länger leben</strong>, <strong>schneller wachsen</strong> und <strong>größere Blätter</strong>  bekommen.
+            
+            <br /><br />
+            Wir wollen das Ende des technischen Rückstands in der Pflanzenpflege sein, und der Anfang grenzenlos grüner Raumgestaltung. 
+            Werde auch du Teil unserer Mission - wir freuen uns auf dich! 
+            {/* Modern, effektiv und ästhetisch. */}
+
+          </p>
+        </div>
+      </section>
     
 
       {/* Vorstellung "Urbanes Ökosystem" – Die Gesamtlösung */}
-      <section className="py-24 bg-[#A8B69F]"> 
+      <section className="py-24 bg-[#F3F3F0]"> 
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-12 text-[#121113]">Urbanes Ökosystem</h2>
           {/* <p className="text-lg text-[#121113] mb-16 max-w-3xl mx-auto">
