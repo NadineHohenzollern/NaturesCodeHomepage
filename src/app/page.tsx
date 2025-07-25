@@ -160,6 +160,19 @@ const urbanEcosystemfeatures = [
   },
 ];
 
+// images data for the ImageSlider with impressive plant growth
+const bigPlants_images = [
+  '/plants/plants_7.jpg',
+  '/plants/plants_8.jpg',
+  '/plants/plants_9.jpg',
+];
+const bigPlants_text = [
+  'Unsere 6 Monate alte Monstera',
+  'Usere Anthurie nach 2 Jahren',
+  'Irgendeine andere Pflanze nach x Monaten',
+];
+const imageSlider_intervalDuration = 6000; // 3 seconds
+
 // Main App component for the Nature's Code homepage
 const App: React.FC = () => {
   return (
@@ -213,70 +226,56 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Mission */}
-      <section className="py-20 bg-[#121113] text-[#E5EEDE]">
-        <div className="container mx-auto px-6 max-w-4xl text-center">
-        <h3 className="text-3xl font-bold mb-8 text-[#E5EEDE]">Mühelos ästhetisch. </h3>
-          <p className="text-lg md:text-xl mb-6">
-            
-          </p>
-          <p className="text-lg md:text-xl">
-            {/* Als Dekoration oder Statussymbol sind eindrucksvolle Zimmerpflanzen längst Bestandteil moderner Wohn- und Arbeitsräume. 
-            Doch ihre Pflege ist mühsam und Ergebnisse bleiben mittelmäßig. 
-            <br /><br />*/}
-
-            Wir {/* von Nature's Code */}wollen die Modernisierung der Pflanzenpflege vorantreiben. 
-            Die Pflege von Zimmerpflanzen ist mühsam und zu oft erfolglos. 
-            Deshalb haben wir ein System entwickelt, das dir nicht nur <strong>95% der Arbeit abnimmt</strong>,
-            sondern dein Pflanzenwachstum optimiert - basierend auf Expertenwissen. 
-
-            Damit deine <strong>Pflanzen länger leben</strong>, <strong>schneller wachsen</strong> und <strong>größere Blätter</strong>  bekommen.
-            
-            <br /><br />
-            Wir wollen das Ende des technischen Rückstands in der Pflanzenpflege sein, und der Anfang grenzenlos grüner Raumgestaltung. 
-            Werde auch du Teil unserer Mission - wir freuen uns auf dich! 
-            {/* Modern, effektiv und ästhetisch. */}
-
-          </p>
-        </div>
+      {/* 3. Quote Section */}
+      <section className="relative py-20 bg-[#121113] text-[#E5EEDE] flex items-center justify-center overflow-hidden">
+       <div className="absolute inset-0 flex items-center justify-center">
+         {/* Large quotation marks as background elements */}
+         <span className="text-[15rem] md:text-[20rem] font-serif text-gray-700 opacity-10 leading-none">“</span>
+         <span className="absolute bottom-0 right-0 text-[15rem] md:text-[20rem] font-serif text-gray-700 opacity-10 leading-none rotate-180">”</span>
+       </div>
+       <div className="relative z-10 container mx-auto px-6 max-w-4xl text-center">
+         <p className="text-2xl md:text-3xl mb-6 italic font-semibold">
+           "Hier steht Ihr großes Zitat, das die Essenz Ihrer Botschaft einfängt und visuell hervorgehoben wird."
+         </p>
+       </div>
       </section>
 
+      {/* 2. Showcase impressive plant growth */}
+      <div className="flex flex-col md:flex-row h-screen w-screen bg-[#F3F3F0]">
+        {/* Left section for Image Slider */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-4">
+          <ImageSlider
+            images={bigPlants_images}
+            imageTexts={bigPlants_text}
+            intervalDuration={imageSlider_intervalDuration}
+          />
+        </div>
+
+        {/* Right section for Text Content */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-8 bg-[#F3F3F0] shadow-lg rounded-lg m-4 md:m-0">
+          <div className="text-gray-800 max-w-md text-center md:text-left">
+            <h1 className="text-4xl font-bold mb-4 text-green-700">Wenn Pflanzen bekommen, was sie brauchen.</h1>
+            <p className="text-lg leading-relaxed mb-4">
+              Gewöhnliche Zimmerpflanzen wachsen über sich hinaus. 
+              Anspruchsvolle Arten gedeihen mit Leichtigkeit. 
+              Was sonst Jahre dauert, geschieht hier in Monaten. 
+            </p>
+            <p className="text-lg leading-relaxed">
+              Das ist kein gewöhnliches Wachstum – es ist Jungle-Wachstum mitten in der Stadt.
+            </p>
+            <p className="text-md mt-6 text-gray-600">
+              Jedes Bild erzählt die Erfolgsgeschichte einer unserer Pflanzen. Lassen Dich inspirieren!
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Value Proposition: Urbanes Ökosystem */}
-      <section className="py-20 bg-[#F3F3F0]"> {/* green2 background */}
+      <section className="py-20 bg-[#F3F3F0]"> 
       <div className="text-center">
         <h1 className="text-5xl  mb-3 text-[#121113]">Urbanes Ökosystem</h1>
-        {/* <h2 className="text-2xl font-bold text-[#121113]">Das Gesamtkonzept für deine Zimmerpflanzen</h2>
-        <p className="text-lg d:text-xl mb-6 text-[#121113]">
-            Kleine Fenster, dunkle Ecken und zu wenig Sonnenlicht sind der Hauptgrund, weshalb das Wachstum deiner Pflanzen stagniert. 
-            
-        </p> */}
       </div>
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:space-x-12">
-          {/* <div className="lg:w-1/2 mb-10 lg:mb-0">
-            <Image src='/plants/plants_2.jpg' alt="Elegante Hängelampe im Wohnraum" width={700} height={500} className="rounded-xl shadow-lg w-full" />
-            <p className="mt-4 text-green4 text-sm text-center">Ästhetisches Bild mit Topf, Pflanze, Lampe und entspannter Person daneben.</p>
-          </div>
-          <div className="lg:w-1/2">
-            <h2 className="text-4xl font-bold mb-6 text-[#121113]">Komfortable Gesamtlösung <br />für deine Pflanzenpflege.</h2>
-            <ul className="space-y-4 text-lg text-green4">
-              <li className="flex items-start">
-                <span className="text-[#121113] mr-3 text-2xl">✓</span>
-                <span><strong className="text-[#121113]">Laglebige Pflanzen.</strong> Behebt den häufigsten Grund für stagnierendes Wachstum oder Pflanzensterben - Lichtmangel.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#121113] mr-3 text-2xl">✓</span>
-                <span><strong className="text-[#121113]">Automatisiertes Gießen.</strong> Nie wieder an Gießen denken oder durch ausgetrocknete Blätter erinnert werden.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#121113] mr-3 text-2xl">✓</span>
-                <span><strong className="text-[#121113]">Wachstumssteigerung.</strong> Liefert den Schlüssel für große, gesunde und schöne Pflanzen - die richtige Nährstoffversorgung.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#121113] mr-3 text-2xl">✓</span>
-                <span><strong className="text-[#121113]">Kein Zeitaufwand.</strong> Übernimmt für dich vollautomatisiert die Aufgaben der Pflanzenpflege wie ein profesioneller Botaniker.</span>
-              </li>
-            </ul>
-          </div> */}
           <ImageFeatureRow features={urbanEcosystemfeatures} />
         </div>
       </section>
