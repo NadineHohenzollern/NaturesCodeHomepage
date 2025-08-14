@@ -9,24 +9,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brightGreen: '#BCE784',
-        green: '#5DD39E',
-        blue: '#348AA7',
-        darkBlue: '#525174',
-        purple: '#513B56',
-        green1: '#D9EE6F',
-        green2: '#A7B758',
-        green3: '#768041',
-        green4: '#44482A',
-        costumBlack: '#121113'
+        customBlack: "#121113",
+        customGreen: "#A8D8AD",
+        customWhite: "#F6FFF8",
+        customGray: "#A8B69F",
+        customAccent: "#D8E1D0",
       },
       fontFamily: {
         sans: ['Quicksand'], // , 'sans-serif'
         mono: ['Libertinus Mono', 'monospace'], // optional
         sansation: ['"Sansation"', 'sans-serif'],
-        encode: ['"Encode Sans Expanded"', 'sans-serif'],
+        encode: ["Encode Sans Expanded", 'sans-serif'],
       },
     },
+  },
+  corePlugins: {
+    // Stelle sicher, dass opacity nicht deaktiviert ist
+    opacity: true,
   },
   plugins: [],
 }

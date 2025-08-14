@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 
 export default function RootLayout({
   children,
@@ -23,22 +24,22 @@ export default function RootLayout({
             <div className="text-xl font-bold text-white flex items-center">Nature&apos;s Code</div>
             <ul className="flex space-x-6 text-lg text-gray-300 items-center">
               <li>
-                <a href="/shadebar" className="hover:text-white transition-all duration-500">Shop</a>
+                <Link href="/shadebar" className="hover:text-white transition-all duration-500">Shop</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-all duration-500">Tools</a>
+                <Link href="#" className="hover:text-white transition-all duration-500">Tools</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-all duration-500">Blog</a>
+                <Link href="#" className="hover:text-white transition-all duration-500">Blog</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-all duration-500">Über uns</a>
+                <Link href="#" className="hover:text-white transition-all duration-500">Über uns</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-all duration-500">FAQ</a>
+                <Link href="#" className="hover:text-white transition-all duration-500">FAQ</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-all duration-500">Kontakt</a>
+                <Link href="#" className="hover:text-white transition-all duration-500">Kontakt</Link>
               </li>
             </ul>
           </nav>
