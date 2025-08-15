@@ -4,18 +4,15 @@ import QuoteSection from '@/components/QuoteSection';
 import ImageSection from '@/components/ImageSection';
 import TableSection from '@/components/TableSection';
 import ProductCard from '@/components/ProductCard';
-import ProductVendingSection from '@/components/ProductVendingSection';
+import TitleSection from '@/components/ui/sections/pageTitle';
 
 const AboutPage: React.FC = () => {
   return (
     <div>
-      <MediaContentSection
-          imagePath="/plants/plants_5_cropped.png"
-          heading="Shade Bars"
-          text="The first grow light designed for shade-loving plants."
-          bgColor="bg-costumBlack"
-          textColor="text-white"
-          isImageLeft={true}
+      <TitleSection
+        title="Shade Bar"
+        caption="The first grow light designed for shade loving plants."
+        image='/plants/plants_5.jpg'
       />
       <MediaContentSection
           imagePath="/elevate/lightspectrum.png"
