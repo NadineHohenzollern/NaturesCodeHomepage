@@ -1,47 +1,54 @@
 import React from 'react';
-import MediaContentSection from '@/components/MediaContentSection';
+//import MediaContentSection from '@/components/MediaContentSection';
 import QuoteSection from '@/components/QuoteSection';
 import ImageSection from '@/components/ImageSection';
 import TableSection from '@/components/TableSection';
 import ProductCard from '@/components/ProductCard';
 import TitleSection from '@/components/ui/sections/pageTitle';
+import MediaContent from '@/components/ui/formats/mediaContent';
+import Quote from '@/components/ui/formats/quote';
 
 const AboutPage: React.FC = () => {
   return (
     <div>
+
       <TitleSection
         title="Shade Bar"
         caption="The first grow light designed for shade loving plants."
         image='/plants/plants_5.jpg'
       />
-      <MediaContentSection
-          imagePath="/elevate/lightspectrum.png"
-          heading="In nature..."
-          text="... shadow-loving plants receive a different spectrum than other plants. It has much more far red bla bla bla"
-          bgColor="bg-costumBlack"
-          textColor="text-white"
-          isImageLeft={false}
-      />
-      <QuoteSection
-          bgColor="bg-costumBlack"
-          textColorQuote="text-white"
-          textColorSource="text-gray-400"
-          quoteText="The first grow light designed for shade-loving plants."
-          fontFamily="font-sans"
-          quoteSource="Quelle, 2024"
-      />      
+
+      {/* explaining the biological foundations for why shade bars make sense */}
+      <section>
+        <div className="bg-costumBlack text-white p-8 space-y-16">
+          <MediaContent
+            title="In nature..."
+            caption="... shadow-loving plants receive a different spectrum than other plants. It has much more far red bla bla bla"
+            image={"/elevate/lightspectrum.png"}
+            image_position="left"
+          />
+          <Quote
+            quote="The first grow light designed for shade-loving plants."
+            source="Quelle, 2024"
+          />
+        </div>
+        
+      </section>
+      
+
+       
       <ImageSection
         imagePath="/elevate/lightbar.png"
         altText="lightbar"
       />
-      <MediaContentSection
+      {/* <MediaContentSection
           imagePath="/elevate/lightspectrum.png"
           heading="light spectrum"
           text="Our shade bars imitate the natural light spectrum in the shadow. bla bla bla"
           bgColor="bg-costumBlack"
           textColor="text-white"
           isImageLeft={false}
-      />
+      /> */}
       <QuoteSection
           bgColor="bg-costumBlack"
           textColorQuote="text-white"
