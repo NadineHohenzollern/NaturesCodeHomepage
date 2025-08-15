@@ -20,17 +20,20 @@ const AboutPage: React.FC = () => {
 
       {/* explaining the biological foundations for why shade bars make sense */}
       <section>
-        <div className="bg-costumBlack text-white p-8 space-y-16">
+        <div className="bg-costumBlack text-white p-8 space-y-2">
+          <div className="p-8 space-y-16 w-full">
+            <Quote
+              quote="The first grow light designed for shade-loving plants."
+              source="Quelle, 2024"
+            />
+          </div>
           <MediaContent
-            title="In nature..."
-            caption="... shadow-loving plants receive a different spectrum than other plants. It has much more far red bla bla bla"
+            title="Shade light is different from sunlight."
+            caption="Shade light has much more far red bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla."
             image={"/elevate/lightspectrum.png"}
             image_position="left"
           />
-          <Quote
-            quote="The first grow light designed for shade-loving plants."
-            source="Quelle, 2024"
-          />
+
         </div>
         
       </section>
